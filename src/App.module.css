@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: arial, sans-serif;
+}
+
+.container {
+    height: calc(100vh + 20px);
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 350px;
+}
+
+@media screen and (min-width:760px) {
+    .container {
+        height: 100vh;
+    }
+}

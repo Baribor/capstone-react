@@ -1,0 +1,139 @@
+.logo {
+    text-align: center;
+    padding-bottom: 20px;
+    margin-top: -100px;
+    height: 70px;
+    user-select: none;
+}
+
+.logo img {
+    width: 200px;
+    height: 50px;
+    margin: auto;
+}
+
+.logo p {
+    width: max-content;
+    color: rgb(27, 116, 27);
+    font-size: 1.5em;
+    font-weight: 500;
+    overflow: hidden;
+    position: relative;
+    top: calc(50px / 2 - 10px);
+    background-color: rgba(156, 241, 156, 0.459);
+    margin: auto;
+    padding: 0px 10px;
+    border-radius: 20px;
+}
+
+.input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    border: 1px solid #e9e3e3;
+    margin: 0px 10px;
+    border-radius: 50px;
+    width: calc(100% - 20px);
+    min-width: 400px;
+}
+
+.input div:not(:nth-child(2)) {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    flex-grow: 0;
+    justify-content: center;
+}
+
+.input div:not(:nth-child(2)):nth-of-type(1) {
+    transform: scale(.8);
+    padding: 10px;
+}
+
+.input div:nth-child(2) {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    flex-shrink: 1;
+}
+
+.searchInput {
+    width: 100%;
+    min-width: 300px;
+    outline: none;
+    border: none;
+    font-size: 1em;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+    color: rgb(85, 79, 79);
+}
+
+.search>div:last-child {
+    display: none;
+}
+
+.search>div:last-child * {
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(218, 229, 240, 0.192);
+    margin-right: 10px;
+    border: 1px solid transparent;
+    font-size: .9em;
+    user-select: none;
+}
+
+.search>div:last-child *:hover {
+    border-color: #f2f2f2;
+    box-shadow: 1px 1px 5px 1px #f2f2f2;
+}
+
+.input:hover {
+    box-shadow: 1px 1px 6px 4px #f2f2f2;
+}
+
+.lang {
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+    font-size: .8em;
+    color: rgb(85, 79, 79);
+    margin-top: 30px;
+}
+
+.lang p:not(:first-child) {
+    color: rgb(8, 8, 145);
+    cursor: pointer;
+}
+
+.lang p:not(:first-child):hover {
+    text-decoration: underline;
+}
+
+.desk {
+    display: none;
+}
+
+@media screen and (min-width:720px) {
+    .input {
+        width: 600px;
+        flex-grow: 0;
+    }
+    .mob {
+        display: none !important;
+    }
+    .search>div:last-child,
+    .desk {
+        display: block !important;
+    }
+}
