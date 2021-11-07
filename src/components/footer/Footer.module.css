@@ -14,6 +14,7 @@ footer>div:last-child {
     padding: 20px 0px 10px 30px;
     display: flex;
     flex-flow: column nowrap;
+    row-gap: 10px;
     margin-right: 40px;
 }
 

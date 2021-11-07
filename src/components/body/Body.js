@@ -59,10 +59,12 @@ const Body = () => {
                 <div>
                     <div className={classes.lang}>
                         <p>Google offered in:</p>
-                        <p>Hausa</p>
-                        <p>Igbo</p>
-                        <p>Èdè Yorùbá</p>
-                        <p>Nigerian Pidgin</p>
+                        <div>
+                            <p>Hausa</p>
+                            <p>Igbo</p>
+                            <p>Èdè Yorùbá</p>
+                            <p>Nigerian Pidgin</p>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -103,18 +103,27 @@
 .lang {
     display: flex;
     justify-content: center;
+    align-items: center;
     column-gap: 15px;
+    row-gap: 10px;
     font-size: .8em;
     color: rgb(85, 79, 79);
     margin-top: 30px;
+    flex-direction: column;
 }
 
-.lang p:not(:first-child) {
+.lang *:not(:first-child) {
+    display: flex;
+    column-gap: 10px;
+}
+
+.lang *:not(:first-child)>p {
     color: rgb(8, 8, 145);
     cursor: pointer;
+    display: inline-block;
 }
 
-.lang p:not(:first-child):hover {
+.lang *:not(:first-child)>p:hover {
     text-decoration: underline;
 }
 
@@ -133,5 +142,8 @@
     .search>div:last-child,
     .desk {
         display: block !important;
+    }
+    .lang {
+        flex-direction: row;
     }
 }
