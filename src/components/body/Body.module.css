@@ -60,8 +60,7 @@
 }
 
 .searchInput {
-    width: 100%;
-    min-width: 300px;
+    width: auto;
     outline: none;
     border: none;
     font-size: 1em;
