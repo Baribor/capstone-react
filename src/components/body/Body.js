@@ -3,7 +3,7 @@ import classes from './Body.module.css';
 
 
 const Body = () => {
-    
+
     const [entry, setentry] = useState('')
 
     /**
@@ -30,7 +30,7 @@ const Body = () => {
 
     return (
 
-        <div>
+        <main>
             <div className={classes.logo}>
                 <img id="logo" src="./images/shlogo.png" alt="Site logo" />
                 <p id="entry">{entry}</p>
@@ -42,7 +42,10 @@ const Body = () => {
                             <img id="logo" src="./images/magnify.svg" alt="search icon" />
                         </div>
                         <div>
-                            <input onInput={(evt) => displayEntry(evt)} type="search" name="search" id="search" className={classes.searchInput} />
+                            <input onInput={(evt) => displayEntry(evt)} type="search" name="search" id="search" className={classes.searchInput}
+                                aria-label="Search for what?"
+                                aria-required="false"
+                            />
                         </div>
                         <div>
                             <img src="./images/google-mic.svg" alt="voice search" />
@@ -53,7 +56,7 @@ const Body = () => {
                         <p>I'm Feeling Lucky</p>
                     </div>
                 </div>
-                <div className={classes.desk}>
+                <div>
                     <div className={classes.lang}>
                         <p>Google offered in:</p>
                         <p>Hausa</p>
@@ -63,7 +66,7 @@ const Body = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </main>
     );
 
 }
