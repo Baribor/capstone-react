@@ -1,2 +1,2 @@
 #Side Hustle - CapStone project
-Live link at https://team-dexter-capstone.netlify.app/
+#Live link at https://team-dexter-capstone.netlify.app/
